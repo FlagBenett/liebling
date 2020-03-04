@@ -8,7 +8,7 @@ into the {body} of the default.hbs template --}}
 
 {{!-- Special header.hbs partial to generate the <header> tag --}}
 {{> header}}
-{{#get "posts" limit="1" filter="title:home"}}
+{{#get "posts" limit="1" filter="title:contact"}}
   {{#foreach posts}}
   <main class="l-fullscreen" style="background-image: url({{feature_image}})">
     <section class="l-fullscreen__content" data-aos="fade-up" data-aos-delay="300">
