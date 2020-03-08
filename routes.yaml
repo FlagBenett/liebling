@@ -12,7 +12,7 @@ routes:
     template: members/account
     data: page.account
   /contact/:
-    permalink: /{slug}/
+    permalink: /contact
     template: contact
 
 collections:
