@@ -8,18 +8,13 @@ into the {body} of the default.hbs template --}}
 
 {{!-- Special header.hbs partial to generate the <header> tag --}}
 {{> header}}
-{{#get "posts" limit="1" filter="title:home"}}
+{{#get "posts" limit="1" filter="title:contact"}}
   {{#foreach posts}}
   <main class="l-fullscreen" style="background: url({{feature_image}}) no-repeat center center fixed; background-size:cover">
     <section class="l-fullscreen__content m-site-title" data-aos="fade-up" data-aos-delay="300">
       <div class="m-hero__content" data-aos="fade-down">
-         <h1 class="m-hero-title bigger">{{@site.title}}</h1>
-        {{#if @site.description}}
-          <p class="m-hero-description bigger">{{@site.description}}</p>
-        {{/if}}
-        {{#if @labs.subscribers}}
-          <a href="{{@site.url}}/subscribe" class="m-button filled">{{t "Subscribe"}}</a>
-        {{/if}}
+         <h1 class="m-hero-title bigger">Contact</h1>
+         <p class="m-hero-description bigger">serguei.verseil@gmail.com</p>
       </div>
       </section>
     </section>

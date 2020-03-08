@@ -1,0 +1,10 @@
+.m-site-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 20px;
+    background-color: var(--very-transparent-background-color);
+    border-radius: 10px;
+    z-index: 1;
+    @include transition(all .25s cubic-bezier(.02,.01,.47,1));
+}

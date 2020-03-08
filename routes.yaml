@@ -11,6 +11,9 @@ routes:
   /account/:
     template: members/account
     data: page.account
+  /contact/:
+    permalink: /contact
+    template: contact
 
 collections:
   /:
